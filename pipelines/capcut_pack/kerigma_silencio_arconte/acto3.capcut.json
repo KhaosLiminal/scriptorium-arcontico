@@ -1,0 +1,164 @@
+{
+  "draft": {
+    "id": "madonna_hibrida_acto3",
+    "name": "Madonna Híbrida — Acto III (Transfiguración)",
+    "create_time": 1700000002,
+    "duration": 30000,
+    "cover_material_id": "img1"
+  },
+
+  "canvas": {
+    "width": 1080,
+    "height": 1920,
+    "background": "#000000",
+    "mode": "portrait"
+  },
+
+  "materials": {
+    "images": [
+      { "id": "img1", "path": "assets/madonna_hibrida/05.jpg" },
+      { "id": "img2", "path": "assets/madonna_hibrida/06.jpg" },
+      { "id": "img3", "path": "assets/madonna_hibrida/07.jpg" },
+      { "id": "img4", "path": "assets/madonna_hibrida/08.jpg" }
+    ],
+
+    "audio": [
+      {
+        "id": "audio_main",
+        "path": "audio/transfiguracion.wav",
+        "volume": 1.0
+      }
+    ],
+
+    "texts": [
+      {
+        "id": "t1",
+        "content": "La carne empezó a recordar su luz.",
+        "font": "Bodoni",
+        "size": 68,
+        "color": "#FFFFFF",
+        "align": "center"
+      },
+      {
+        "id": "t2",
+        "content": "Un rumor antiguo abrió su arquitectura.",
+        "font": "Bodoni",
+        "size": 70,
+        "color": "#FFFFFF",
+        "align": "center"
+      },
+      {
+        "id": "t3",
+        "content": "El hueso se volvió mensaje.",
+        "font": "Bodoni",
+        "size": 72,
+        "color": "#FFFFFF",
+        "align": "center"
+      },
+      {
+        "id": "t4",
+        "content": "La piel, una plegaria en tránsito.",
+        "font": "Bodoni",
+        "size": 72,
+        "color": "#FFFFFF",
+        "align": "center"
+      },
+      {
+        "id": "t5",
+        "content": "La forma ya no era su límite.",
+        "font": "Bodoni",
+        "size": 72,
+        "color": "#FFFFFF",
+        "align": "center"
+      },
+      {
+        "id": "t6",
+        "content": "Transfiguración: el instante donde nada es lo que fue.",
+        "font": "Bodoni",
+        "size": 76,
+        "color": "#FFFFFF",
+        "align": "center"
+      }
+    ]
+  },
+
+  "tracks": [
+
+    {
+      "id": "track_images",
+      "type": "video",
+      "clips": [
+        {
+          "id": "c1",
+          "material_id": "img1",
+          "start": 0,
+          "duration": 4000,
+          "transition": { "type": "crossfade", "duration": 700 }
+        },
+        {
+          "id": "c2",
+          "material_id": "img1",
+          "start": 4000,
+          "duration": 5000,
+          "transition": { "type": "crossfade", "duration": 700 }
+        },
+        {
+          "id": "c3",
+          "material_id": "img2",
+          "start": 9000,
+          "duration": 6000,
+          "transition": { "type": "crossfade", "duration": 700 }
+        },
+        {
+          "id": "c4",
+          "material_id": "img3",
+          "start": 15000,
+          "duration": 5000,
+          "transition": { "type": "crossfade", "duration": 700 }
+        },
+        {
+          "id": "c5",
+          "material_id": "img3",
+          "start": 20000,
+          "duration": 6000,
+          "transition": { "type": "crossfade", "duration": 700 }
+        },
+        {
+          "id": "c6",
+          "material_id": "img4",
+          "start": 26000,
+          "duration": 4000
+        }
+      ]
+    },
+
+    {
+      "id": "track_text",
+      "type": "text",
+      "clips": [
+        { "id": "t1_clip", "material_id": "t1", "start": 400, "duration": 3500, "motion": { "type": "fade_up", "duration": 600 } },
+        { "id": "t2_clip", "material_id": "t2", "start": 4400, "duration": 4200, "motion": { "type": "fade_up", "duration": 600 } },
+        { "id": "t3_clip", "material_id": "t3", "start": 9400, "duration": 4200, "motion": { "type": "fade_up", "duration": 600 } },
+        { "id": "t4_clip", "material_id": "t4", "start": 15400, "duration": 4200, "motion": { "type": "fade_up", "duration": 600 } },
+        { "id": "t5_clip", "material_id": "t5", "start": 20400, "duration": 3200, "motion": { "type": "fade_up", "duration": 600 } },
+        { "id": "t6_clip", "material_id": "t6", "start": 26400, "duration": 3000, "motion": { "type": "fade_up", "duration": 600 } }
+      ]
+    },
+
+    {
+      "id": "track_audio",
+      "type": "audio",
+      "clips": [
+        {
+          "id": "audio_clip",
+          "material_id": "audio_main",
+          "start": 0,
+          "duration": 30000,
+          "fade_in": 1200,
+          "fade_out": 1500
+        }
+      ]
+    }
+
+  ]
+}

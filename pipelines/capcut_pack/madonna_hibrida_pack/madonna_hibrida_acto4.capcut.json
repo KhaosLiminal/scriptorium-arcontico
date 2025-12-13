@@ -1,0 +1,32 @@
+{
+  "reel": "madonna_hibrida_acto4",
+  "meta": {
+    "version": "1.0",
+    "duration": 30,
+    "theme": "Madonna Híbrida — Ascensión",
+    "tono": "híbrido total — místico + profano + tecnognóstico"
+  },
+  "assets": {
+    "img1": "assets/madonna_hibrida/09.jpg",
+    "img2": "assets/madonna_hibrida/10.jpg",
+    "img3": "assets/madonna_hibrida/11.jpg",
+    "img4": "assets/madonna_hibrida/12.jpg",
+    "audio": "audio/ascension.wav"
+  },
+  "timeline": [
+    { "start": 0,  "end": 4,  "props": { "img": "img1", "text": "Ascender no era subir." }},
+    { "start": 4,  "end": 9,  "props": { "img": "img2", "text": "Era desdoblar la sombra y beber su eco." }},
+    { "start": 9,  "end": 15, "props": { "img": "img2", "text": "El código abrió su médula." }},
+    { "start": 15, "end": 20, "props": { "img": "img3", "text": "La carne se volvió señal." }},
+    { "start": 20, "end": 26, "props": { "img": "img4", "text": "La luz dejó de obedecer." }},
+    { "start": 26, "end": 30, "props": { "img": "img4", "text": "Ascensión: donde la forma sueña con su origen." }}
+  ],
+  "styles": {
+    "font_primary": "Bodoni",
+    "font_secondary": "HelveticaNeue-Light",
+    "color_text": "#FFFFFF",
+    "motion_text": "fade+ascender",
+    "transition_images": "crossfade_600ms",
+    "caption_style": "editorial_minimal_glitch"
+  }
+}

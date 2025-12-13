@@ -1,0 +1,37 @@
+{
+  "reel": "madonna_hibrida_acto4",
+  "meta": {
+    "version": "1.0",
+    "duration": "30s",
+    "theme": "Madonna Híbrida — Ascensión",
+    "tono": "híbrido total — místico + profano + tecnognóstico",
+    "img": "img2",
+    "text": "Era desdoblar la sombra y beber su eco."
+  },
+  "assets": {
+    "img1": "assets/madonna_hibrida/09.jpg",
+    "img2": "assets/madonna_hibrida/10.jpg",
+    "img3": "assets/madonna_hibrida/11.jpg",
+    "img4": "assets/madonna_hibrida/12.jpg",
+    "audio": "audio/ascension.wav"
+  },
+  "timeline": [
+    {
+      "start": 0,
+      "end": 4,
+      "rawRange": "0-4s",
+      "props": {
+        "img": "img1",
+        "text": "Ascender no era subir."
+      }
+    }
+  ],
+  "styles": {
+    "font_primary": "Bodoni",
+    "font_secondary": "HelveticaNeue-Light",
+    "color_text": "#FFFFFF",
+    "motion_text": "fade_up",
+    "transition_images": "crossfade_600ms",
+    "caption_style": "editorial_minimal_glitch"
+  }
+}

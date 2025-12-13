@@ -1,0 +1,44 @@
+{
+  "draft": {
+    "id": "reel",
+    "create_time": 1765412413619,
+    "duration": 30000
+  },
+  "canvas": {
+    "width": 1080,
+    "height": 1920,
+    "background": "#000000",
+    "mode": "portrait"
+  },
+  "materials": {
+    "images": [],
+    "audio": [],
+    "texts": []
+  },
+  "tracks": [
+    {
+      "id": "track_images",
+      "type": "video",
+      "clips": []
+    },
+    {
+      "id": "track_text",
+      "type": "text",
+      "clips": []
+    },
+    {
+      "id": "track_audio",
+      "type": "audio",
+      "clips": [
+        {
+          "id": "audio_clip",
+          "material_id": "audio_main",
+          "start": 0,
+          "duration": 30000,
+          "fade_in": 1200,
+          "fade_out": 1500
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+    "chat.mcp.serverSampling": {
+        "scriptorium-arcontico/.vscode/mcp.json: perplexity": {
+            "allowedModels": [
+                "copilot/auto"
+            ]
+        }
+    }
+}

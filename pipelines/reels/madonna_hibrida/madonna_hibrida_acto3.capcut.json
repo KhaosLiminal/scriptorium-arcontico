@@ -1,0 +1,37 @@
+{
+  "draft": {
+    "id": "reel",
+    "name": "ARC Reel",
+    "create_time": 1765545701068,
+    "duration": 30000,
+    "cover_material_id": null
+  },
+  "canvas": {
+    "width": 1080,
+    "height": 1920,
+    "background": "#000000",
+    "mode": "portrait"
+  },
+  "materials": {
+    "images": [],
+    "audio": [],
+    "texts": []
+  },
+  "tracks": [
+    {
+      "id": "track_images",
+      "type": "video",
+      "clips": []
+    },
+    {
+      "id": "track_text",
+      "type": "text",
+      "clips": []
+    },
+    {
+      "id": "track_audio",
+      "type": "audio",
+      "clips": []
+    }
+  ]
+}

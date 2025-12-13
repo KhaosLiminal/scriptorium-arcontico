@@ -1,0 +1,21 @@
+{
+  "print": "print",
+  "wait": "wait",
+  "invoke": "invoke",
+
+  "emit": "emit",
+  "log": "log",
+
+  "ritual:invoke": "ritual:invoke",
+  "ritual:transition": "ritual:transition",
+  "ritual:entity": "ritual:entity",
+
+  "ontology:link": "ontology:link",
+  "ontology:define": "ontology:define",
+
+  "glosario:add": "glosario:add",
+  "glosario:normalize": "glosario:normalize",
+
+  "core:import": "core:import",
+  "core:require": "core:require"
+}

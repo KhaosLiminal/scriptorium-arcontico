@@ -1,0 +1,42 @@
+# ARC TOKEN DEFINITIONS
+# ---------------------
+
+=== Structural Tokens ===
+LBRACE          { 
+RBRACE          }
+LBRACK          [
+RBRACK          ]
+COLON           :
+EQUALS          =
+COMMA           ,
+
+=== Whitespace & Comments ===
+WHITESPACE      (spaces, tabs, line breaks)
+COMMENT         # until end of line
+
+=== Primitives ===
+STRING          "text" or 'text'
+NUMBER          123 or 12.5
+BOOLEAN         true / false
+
+=== Identifiers ===
+IDENT           letters, digits, _, -, .
+
+=== Paths ===
+PATH            matches a/... or a/b/... (used in map/engine)
+
+=== Keywords (semantic tokens) ===
+KERNEL          kernel
+RITUAL          ritual
+META            meta
+PHASE           phase
+MAP             map
+RULES           rules
+INVOKE          invoke
+EXPECTED_STATE  expected_state
+DESCRIPTION     description
+STEP            step
+
+=== Special Patterns ===
+ARROW           ->
+

@@ -1,0 +1,159 @@
+{
+  "draft": {
+    "id": "madonna_hibrida_acto2",
+    "name": "Madonna Híbrida — Acto II",
+    "create_time": 1700000000,
+    "update_time": 1700000000,
+    "duration": 30000,
+    "cover_material_id": "img1"
+  },
+
+  "canvas": {
+    "width": 1080,
+    "height": 1920,
+    "background": "#000000",
+    "mode": "portrait"
+  },
+
+  "materials": {
+    "images": [
+      { "id": "img1", "path": "assets/madonna_hibrida/01.jpg" },
+      { "id": "img2", "path": "assets/madonna_hibrida/02.jpg" },
+      { "id": "img3", "path": "assets/madonna_hibrida/03.jpg" },
+      { "id": "img4", "path": "assets/madonna_hibrida/04.jpg" }
+    ],
+
+    "audio": [
+      {
+        "id": "audio_main",
+        "path": "audio/antes_del_silencio_cantos_de_ballena.wav",
+        "volume": 1.0
+      }
+    ],
+
+    "texts": [
+      {
+        "id": "t1",
+        "content": "Ella no vino a ser vista.",
+        "font": "Bodoni",
+        "size": 68,
+        "color": "#FFFFFF",
+        "align": "center"
+      },
+      {
+        "id": "t2",
+        "content": "Ella vino a resonar.",
+        "font": "Bodoni",
+        "size": 70,
+        "color": "#FFFFFF",
+        "align": "center"
+      },
+      {
+        "id": "t3",
+        "content": "Entre lo divino…",
+        "font": "Bodoni",
+        "size": 72,
+        "color": "#FFFFFF",
+        "align": "center"
+      },
+      {
+        "id": "t4",
+        "content": "…y lo profano.",
+        "font": "Bodoni",
+        "size": 72,
+        "color": "#FFFFFF",
+        "align": "center"
+      },
+      {
+        "id": "t5",
+        "content": "Cuerpo antiguo.",
+        "font": "Bodoni",
+        "size": 72,
+        "color": "#FFFFFF",
+        "align": "center"
+      },
+      {
+        "id": "t6",
+        "content": "Tecnología que respira.",
+        "font": "Bodoni",
+        "size": 72,
+        "color": "#FFFFFF",
+        "align": "center"
+      },
+      {
+        "id": "t7",
+        "content": "Madonna Híbrida: la liturgia que arde.",
+        "font": "Bodoni",
+        "size": 74,
+        "color": "#FFFFFF",
+        "align": "center"
+      }
+    ]
+  },
+
+  "tracks": [
+
+    {
+      "id": "track_images",
+      "type": "video",
+      "clips": [
+        { "id": "c1", "material_id": "img1", "start": 0, "duration": 3000,
+          "transition": { "type": "crossfade", "duration": 600 }
+        },
+        { "id": "c2", "material_id": "img1", "start": 3000, "duration": 4000,
+          "transition": { "type": "crossfade", "duration": 600 }
+        },
+        { "id": "c3", "material_id": "img2", "start": 7000, "duration": 5000,
+          "transition": { "type": "crossfade", "duration": 600 }
+        },
+        { "id": "c4", "material_id": "img2", "start": 12000, "duration": 5000,
+          "transition": { "type": "crossfade", "duration": 600 }
+        },
+        { "id": "c5", "material_id": "img3", "start": 17000, "duration": 5000,
+          "transition": { "type": "crossfade", "duration": 600 }
+        },
+        { "id": "c6", "material_id": "img3", "start": 22000, "duration": 4000,
+          "transition": { "type": "crossfade", "duration": 600 }
+        },
+        { "id": "c7", "material_id": "img4", "start": 26000, "duration": 4000 }
+      ]
+    },
+
+    {
+      "id": "track_text",
+      "type": "text",
+      "clips": [
+        { "id": "t1_clip", "material_id": "t1", "start": 600, "duration": 2400,
+          "motion": { "type": "fade_up", "duration": 600 } },
+        { "id": "t2_clip", "material_id": "t2", "start": 3600, "duration": 3000,
+          "motion": { "type": "fade_up", "duration": 600 } },
+        { "id": "t3_clip", "material_id": "t3", "start": 7400, "duration": 3000,
+          "motion": { "type": "fade_up", "duration": 600 } },
+        { "id": "t4_clip", "material_id": "t4", "start": 12400, "duration": 3000,
+          "motion": { "type": "fade_up", "duration": 600 } },
+        { "id": "t5_clip", "material_id": "t5", "start": 17400, "duration": 3000,
+          "motion": { "type": "fade_up", "duration": 600 } },
+        { "id": "t6_clip", "material_id": "t6", "start": 22400, "duration": 2000,
+          "motion": { "type": "fade_up", "duration": 600 } },
+        { "id": "t7_clip", "material_id": "t7", "start": 26400, "duration": 3000,
+          "motion": { "type": "fade_up", "duration": 600 } }
+      ]
+    },
+
+    {
+      "id": "track_audio",
+      "type": "audio",
+      "clips": [
+        {
+          "id": "audio_clip",
+          "material_id": "audio_main",
+          "start": 0,
+          "duration": 30000,
+          "fade_in": 1200,
+          "fade_out": 1800
+        }
+      ]
+    }
+
+  ]
+}

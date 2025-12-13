@@ -1,0 +1,13 @@
+- core/
+  - core-map.arc
+  - prompts-core.arc
+  - ritual.arc
+  - prompt_ritual.arc
+  - ontology.arc
+  - glosarios normalizados
+
+- parser/
+  - arc_lexer.js
+  - arc_ast.js
+  - arc_transform.js
+  - arc_ritual_parser.js

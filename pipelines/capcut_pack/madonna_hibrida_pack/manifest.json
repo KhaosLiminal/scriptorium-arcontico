@@ -1,0 +1,30 @@
+{
+  "name": "madonna_hibrida_pack",
+  "version": "1.0.0",
+  "description": "Pack audiovisual de la secuencia Madonna Híbrida — Reflejos Híbridos.",
+  "acts": [
+    {
+      "id": "madonna_hibrida_acto2",
+      "name": "Acto II — Origen",
+      "file": "madonna_hibrida_acto2.capcut.json"
+    },
+    {
+      "id": "madonna_hibrida_acto3",
+      "name": "Acto III — Transfiguración",
+      "file": "madonna_hibrida_acto3.capcut.json"
+    },
+    {
+      "id": "madonna_hibrida_acto4",
+      "name": "Acto IV — Ascensión",
+      "file": "madonna_hibrida_acto4.capcut.json"
+    }
+  ],
+  "master": {
+    "id": "madonna_hibrida_master",
+    "file": "madonna_hibrida_master.capcut.json"
+  },
+  "assets": {
+    "images": "assets/",
+    "audio": "audio/"
+  }
+}

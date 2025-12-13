@@ -1,0 +1,13 @@
+{
+  "name": "scriptorium-arcontico",
+  "version": "1.0.0",
+  "description": "Motor de rituales ARC",
+  "type": "module",
+  "main": "engine/runner.js",
+  "scripts": {
+    "start": "node engine/runner.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,32 @@
+{
+  "reel": "madonna_hibrida_acto3",
+  "meta": {
+    "version": "1.0",
+    "duration": 30,
+    "theme": "Madonna Híbrida — Transfiguración",
+    "tono": "ascético, radiante, místico-material"
+  },
+  "assets": {
+    "img1": "assets/madonna_hibrida/05.jpg",
+    "img2": "assets/madonna_hibrida/06.jpg",
+    "img3": "assets/madonna_hibrida/07.jpg",
+    "img4": "assets/madonna_hibrida/08.jpg",
+    "audio": "audio/transfiguracion.wav"
+  },
+  "timeline": [
+    { "start": 0,  "end": 4,  "props": { "img": "img1", "text": "La carne empezó a recordar su luz." }},
+    { "start": 4,  "end": 9,  "props": { "img": "img1", "text": "Un rumor antiguo abrió su arquitectura." }},
+    { "start": 9,  "end": 15, "props": { "img": "img2", "text": "El hueso se volvió mensaje." }},
+    { "start": 15, "end": 20, "props": { "img": "img3", "text": "La piel, una plegaria en tránsito." }},
+    { "start": 20, "end": 26, "props": { "img": "img3", "text": "La forma ya no era su límite." }},
+    { "start": 26, "end": 30, "props": { "img": "img4", "text": "Transfiguración: el instante donde nada es lo que fue." }}
+  ],
+  "styles": {
+    "font_primary": "Bodoni",
+    "font_secondary": "HelveticaNeue-Light",
+    "color_text": "#FFFFFF",
+    "motion_text": "fade_up",
+    "transition_images": "crossfade_700ms",
+    "caption_style": "editorial_minimal"
+  }
+}

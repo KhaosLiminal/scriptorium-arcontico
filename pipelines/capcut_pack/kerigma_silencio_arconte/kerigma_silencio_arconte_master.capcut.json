@@ -1,0 +1,103 @@
+{
+  "draft": {
+    "id": "kerigma_silencio_arconte_master",
+    "name": "Kerigma — Silencio del Arconte (Master Ritual)",
+    "create_time": 1700000100,
+    "duration": 180000,
+    "cover_material_id": "img_a0_1"
+  },
+
+  "canvas": {
+    "width": 1080,
+    "height": 1920,
+    "background": "#000000",
+    "mode": "portrait"
+  },
+
+  "materials": {
+    "images": [
+      { "id": "img_a0_1", "path": "assets/arconte/01.jpg" },
+      { "id": "img_a0_2", "path": "assets/arconte/02.jpg" },
+      { "id": "img_a1_1", "path": "assets/madonna/01.jpg" },
+      { "id": "img_a1_2", "path": "assets/madonna/02.jpg" },
+      { "id": "img_a2_1", "path": "assets/madonna/03.jpg" },
+      { "id": "img_a2_2", "path": "assets/madonna/04.jpg" },
+      { "id": "img_a3_1", "path": "assets/madonna/05.jpg" },
+      { "id": "img_a3_2", "path": "assets/madonna/06.jpg" },
+      { "id": "img_a4_1", "path": "assets/madonna/07.jpg" },
+      { "id": "img_a4_2", "path": "assets/madonna/08.jpg" },
+      { "id": "img_a5_1", "path": "assets/arconte/03.jpg" },
+      { "id": "img_a5_2", "path": "assets/arconte/04.jpg" }
+    ],
+
+    "audio": [
+      { "id": "audio_a0", "path": "audio/primer_latido.wav", "volume": 1.0 },
+      { "id": "audio_a1", "path": "audio/origen.wav", "volume": 1.0 },
+      { "id": "audio_a2", "path": "audio/acto2.wav", "volume": 1.0 },
+      { "id": "audio_a3", "path": "audio/transfiguracion.wav", "volume": 1.0 },
+      { "id": "audio_a4", "path": "audio/ascension.wav", "volume": 1.0 },
+      { "id": "audio_a5", "path": "audio/coronacion.wav", "volume": 1.0 }
+    ],
+
+    "texts": [
+      { "id": "t_a0", "content": "La Cámara del Primer Latido", "font": "Bodoni", "size": 70, "color": "#FFFFFF", "align": "center" },
+      { "id": "t_a1", "content": "Origen: Allí donde la voz empezó a encender el mundo.", "font": "Bodoni", "size": 65, "color": "#FFFFFF", "align": "center" },
+      { "id": "t_a2", "content": "Acto II — Resonancia", "font": "Bodoni", "size": 62, "color": "#FFFFFF", "align": "center" },
+      { "id": "t_a3", "content": "Acto III — Transfiguración", "font": "Bodoni", "size": 64, "color": "#FFFFFF", "align": "center" },
+      { "id": "t_a4", "content": "Acto IV — Ascensión", "font": "Bodoni", "size": 68, "color": "#FFFFFF", "align": "center" },
+      { "id": "t_a5", "content": "Acto V — Coronación del Silencio", "font": "Bodoni", "size": 70, "color": "#FFFFFF", "align": "center" }
+    ]
+  },
+
+  "tracks": [
+    {
+      "id": "track_images",
+      "type": "video",
+      "clips": [
+        { "id": "c_a0_1", "material_id": "img_a0_1", "start": 0, "duration": 6000, "transition": { "type": "crossfade", "duration": 800 } },
+        { "id": "c_a0_2", "material_id": "img_a0_2", "start": 6000, "duration": 4000 },
+
+        { "id": "c_a1_1", "material_id": "img_a1_1", "start": 10000, "duration": 7000, "transition": { "type": "crossfade", "duration": 800 } },
+        { "id": "c_a1_2", "material_id": "img_a1_2", "start": 17000, "duration": 7000 },
+
+        { "id": "c_a2_1", "material_id": "img_a2_1", "start": 24000, "duration": 7000, "transition": { "type": "crossfade", "duration": 800 } },
+        { "id": "c_a2_2", "material_id": "img_a2_2", "start": 31000, "duration": 7000 },
+
+        { "id": "c_a3_1", "material_id": "img_a3_1", "start": 38000, "duration": 8000, "transition": { "type": "crossfade", "duration": 800 } },
+        { "id": "c_a3_2", "material_id": "img_a3_2", "start": 46000, "duration": 7000 },
+
+        { "id": "c_a4_1", "material_id": "img_a4_1", "start": 53000, "duration": 8000, "transition": { "type": "crossfade", "duration": 800 } },
+        { "id": "c_a4_2", "material_id": "img_a4_2", "start": 61000, "duration": 7000 },
+
+        { "id": "c_a5_1", "material_id": "img_a5_1", "start": 68000, "duration": 8000, "transition": { "type": "crossfade", "duration": 800 } },
+        { "id": "c_a5_2", "material_id": "img_a5_2", "start": 76000, "duration": 7000 }
+      ]
+    },
+
+    {
+      "id": "track_texts",
+      "type": "text",
+      "clips": [
+        { "id": "tclip_a0", "material_id": "t_a0", "start": 500, "duration": 4500 },
+        { "id": "tclip_a1", "material_id": "t_a1", "start": 11000, "duration": 6000 },
+        { "id": "tclip_a2", "material_id": "t_a2", "start": 25000, "duration": 5000 },
+        { "id": "tclip_a3", "material_id": "t_a3", "start": 39500, "duration": 6000 },
+        { "id": "tclip_a4", "material_id": "t_a4", "start": 54000, "duration": 5000 },
+        { "id": "tclip_a5", "material_id": "t_a5", "start": 69000, "duration": 6000 }
+      ]
+    },
+
+    {
+      "id": "track_audio",
+      "type": "audio",
+      "clips": [
+        { "id": "a0", "material_id": "audio_a0", "start": 0, "duration": 30000 },
+        { "id": "a1", "material_id": "audio_a1", "start": 30000, "duration": 30000 },
+        { "id": "a2", "material_id": "audio_a2", "start": 60000, "duration": 30000 },
+        { "id": "a3", "material_id": "audio_a3", "start": 90000, "duration": 30000 },
+        { "id": "a4", "material_id": "audio_a4", "start": 120000, "duration": 30000 },
+        { "id": "a5", "material_id": "audio_a5", "start": 150000, "duration": 30000 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "reel": "madonna_hibrida_master",
+  "meta": {
+    "version": "1.1",
+    "autor": "Khaos / Reflejos Híbridos",
+    "tipo": "tetralogia",
+    "descripcion": "El cuerpo recordando su luz.",
+    "file": "pipelines/reels/madonna_hibrida/madonna_hibrida_acto3.arc",
+    "tags": "carne, luz, médula, plegaria, transfiguración"
+  },
+  "assets": {},
+  "timeline": [],
+  "styles": {
+    "font_primary": "Bodoni",
+    "font_secondary": "HelveticaNeue-Light",
+    "motion_default": "fade_up",
+    "transition_default": "crossfade_600ms",
+    "color_text": "#FFFFFF"
+  }
+}

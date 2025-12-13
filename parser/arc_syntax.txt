@@ -1,0 +1,104 @@
+# ARC SYNTAX SPECIFICATION
+# ------------------------
+# Define the high-level syntax for the ARC DSL.
+
+========================
+1. KERNEL DECLARATION
+========================
+
+kernel <name> {
+    meta {
+        key = value
+        key = "string"
+        key = 123
+        key = true
+        key = [a, b, c]
+    }
+
+    invoke <target> {
+        description = "text"
+        outputs = ["x", "y"]
+    }
+
+    map {
+        key: value
+    }
+
+    rules {
+        from -> to
+    }
+
+    expected_state {
+        key = value
+    }
+}
+
+
+========================
+2. RITUAL DECLARATION
+========================
+
+ritual <name> {
+    description = "text"
+
+    phase <id> {
+        step = "instruction"
+        step = "instruction"
+    }
+
+    meta {
+        key = value
+    }
+}
+
+
+========================
+3. BASE TYPES
+========================
+
+STRING:
+    "text" or 'text'
+
+NUMBER:
+    digits or digits.decimal
+
+BOOLEAN:
+    true or false
+
+LIST:
+    [a, b, c]
+    items may be strings or identifiers
+
+IDENTIFIER:
+    letters, numbers, underscores, hyphens
+
+
+========================
+4. COMMENTS
+========================
+
+Starts with "#"
+Everything after "#" on the same line is ignored.
+
+
+========================
+5. BLOCKS
+========================
+
+block {
+    <content>
+}
+
+Blocks open with "{" and close with "}".
+Whitespace is ignored except inside strings.
+
+
+========================
+6. GENERAL PARSING RULES
+========================
+
+- Key/value assignments use "=" or ":" depending on the block.
+- Invocation blocks require a target name.
+- Rituals contain phases, each with multiple steps.
+- KVP inside meta is flexible with primitive types.
+- Rules follow "A -> B" structure.
