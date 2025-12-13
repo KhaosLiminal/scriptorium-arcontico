@@ -15,7 +15,17 @@
     "img4": "assets/madonna_hibrida/04.jpg",
     "audio": "audio/antes_del_silencio_cantos_de_ballena.wav"
   },
-  "timeline": [],
+  "timeline": [
+    {
+      "start": 0,
+      "end": 3,
+      "rawRange": "0-3s",
+      "props": {
+        "img": "img1",
+        "text": "Ella no vino a ser vista."
+      }
+    }
+  ],
   "styles": {
     "font_primary": "Bodoni",
     "font_secondary": "HelveticaNeue-Light",
