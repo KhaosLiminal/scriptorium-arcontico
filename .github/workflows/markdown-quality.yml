@@ -1,0 +1,36 @@
+name: Markdown Quality
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+
+jobs:
+  markdown-quality:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Markdown lint
+        run: |
+          npx --yes markdownlint-cli2 \
+            "README.md" \
+            "CONTRIBUTING.md" \
+            "arconte/README.md" \
+            "SCRIPTORIUM_ARCONTICO/**/*.md" \
+            ".github/**/*.md" \
+            "#SCRIPTORIUM_ARCONTICO/ARCONTE_v3_tokenizado.md"
+
+      - name: Link check
+        run: |
+          set -euo pipefail
+          files=$(git ls-files README.md CONTRIBUTING.md arconte/README.md 'SCRIPTORIUM_ARCONTICO/*.md' 'SCRIPTORIUM_ARCONTICO/**/*.md' '.github/**/*.md' ':(exclude)SCRIPTORIUM_ARCONTICO/ARCONTE_v3_tokenizado.md')
+          for f in $files; do
+            npx --yes markdown-link-check -q "$f"
+          done

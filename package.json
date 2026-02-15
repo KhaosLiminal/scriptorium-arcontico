@@ -1,13 +1,15 @@
 {
-  "name": "scriptorium-arcontico",
-  "version": "1.0.0",
-  "description": "Motor de rituales ARC",
-  "type": "module",
-  "main": "engine/runner.js",
-  "scripts": {
-    "start": "node engine/runner.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+    "name":  "scriptorium-arcontico",
+    "version":  "1.0.0",
+    "description":  "Motor de rituales ARC",
+    "type":  "module",
+    "main":  "engine/runner.js",
+    "scripts":  {
+                    "start":  "node engine/runner.js",
+                    "test":  "echo \"Error: no test specified\" \u0026\u0026 exit 1",
+                    "lint:md":  "npx --yes markdownlint-cli2 \"README.md\" \"CONTRIBUTING.md\" \"arconte/README.md\" \"SCRIPTORIUM_ARCONTICO/**/*.md\" \".github/**/*.md\" \"#SCRIPTORIUM_ARCONTICO/ARCONTE_v3_tokenizado.md\"",
+                    "check:links":  "powershell -NoProfile -Command \"git ls-files README.md CONTRIBUTING.md arconte/README.md SCRIPTORIUM_ARCONTICO/*.md SCRIPTORIUM_ARCONTICO/**/*.md .github/**/*.md | % { npx --yes markdown-link-check -q $_ }\""
+                },
+    "author":  "",
+    "license":  "ISC"
 }
