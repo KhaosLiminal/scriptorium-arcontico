@@ -4,15 +4,15 @@
  */
 
 import tokenize from "./arc_lexer.mjs";
-import buildRitualAST from "./arc_ast.js";  // si tienes separado, o inline
+import parse from "./arc_ast.js";  // importar la función parse por defecto
 
 export default function parseRitual(filePath, text) {
     console.log(`⟢ Parseando ritual: ${filePath}`);
 
     const tokens = tokenize(text);
-    const ast = buildRitualAST(tokens);  // tu AST builder para rituales
+    const ast = parse(tokens);  // usar la función parse importada
 
-    console.log(`⟢ Ritual '${ast.name}' parseado — ${ast.steps.length} steps`);
+    console.log(`⟢ Ritual '${ast.name || "desconocido"}' parseado — ${ast.sections?.length || 0} secciones`);
 
     return ast;
 }

@@ -58,11 +58,12 @@ async function main() {
   console.log("🔎 Tipo detectado (heurístico):", kind);
 
   // Try to dynamically import modules (may be CommonJS or ESM)
-  const modLexer = await tryImport("./arc_lexer.js");            // ESM preferred
-  const modAST   = await tryImport("./arc_ast.js");
-  const modKernel = await tryImport("./arc_kernel_parser.js");
+  const modLexer = await tryImport("./arc_lexer.mjs");
+  const modAST = await tryImport("./arc_ast.js");
   const modRitual = await tryImport("./arc_ritual_parser.js");
-  const modMock   = await tryImport("./arc_parser_mock.js");
+  const modRitualTransform = await tryImport("./arc_ritual_transform.js");
+  const modKernel = await tryImport("./arc_kernel_parser.js");
+  const modMock = await tryImport("./arc_parser_mock.js");
   const modTransform = await tryImport("./arc_transform.js");
 
   // Normalize imported modules to functions we can call regardless of export style
@@ -72,12 +73,13 @@ async function main() {
   const ritualParse = (modRitual && (modRitual.parseRitual || modRitual.parseARC || modRitual.default?.parseRitual || modRitual.default)) ? (modRitual.parseRitual || modRitual.parseARC || modRitual.default?.parseRitual || modRitual.default) : null;
   const mockParse = (modMock && (modMock.parseARC || modMock.mockParseARC || modMock.default?.parseARC || modMock.default)) ? (modMock.parseARC || modMock.mockParseARC || modMock.default?.parseARC || modMock.default) : null;
   const transform = (modTransform && (modTransform.transform || modTransform.default?.transform || modTransform.default)) ? (modTransform.transform || modTransform.default?.transform || modTransform.default) : null;
+  const ritualTransform = (modRitualTransform && (modRitualTransform.transform || modRitualTransform.default?.transform || modRitualTransform.default)) ? (modRitualTransform.transform || modRitualTransform.default?.transform || modRitualTransform.default) : null;
 
   let rawAst = null;
   try {
     if (kind === "ritual" && ritualParse) {
       console.log("⚙️ Usando ritual parser (arc_ritual_parser).");
-      rawAst = await ritualParse(absPath);
+      rawAst = await ritualParse(absPath, text);
     } else if (kind === "kernel" && kernelParse) {
       console.log("⚙️ Usando kernel parser (arc_kernel_parser).");
       rawAst = await kernelParse.parseARC ? await kernelParse.parseARC(absPath) : await kernelParse(absPath);
@@ -112,7 +114,12 @@ async function main() {
   // Transform AST toward kernel/ritual normalized shapes if possible
   let norm = rawAst;
   try {
-    if (transform) {
+    // Forzar siempre el uso del transformador de rituales para archivos ARC
+    if (ritualTransform && fileArg.endsWith('.arc')) {
+      norm = ritualTransform(rawAst);
+      console.log("\n🔁 AST TRANSFORMADO (Ritual forzado):");
+      console.log(JSON.stringify(norm, null, 2));
+    } else if (transform) {
       norm = transform(rawAst);
       console.log("\n🔁 AST TRANSFORMADO:");
       console.log(JSON.stringify(norm, null, 2));

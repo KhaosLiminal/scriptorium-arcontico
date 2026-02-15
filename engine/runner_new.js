@@ -8,7 +8,7 @@ import { exportToCapCut } from "./exporters/capcut_exporter.js";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-console.log("🔥 Runner activo");
+console.log("🔥 RUNNER NUEVO ACTIVO - Pipeline Moderno");
 
 const file = process.argv[2];
 if (!file) {
@@ -56,6 +56,11 @@ async function runRitual(ritual, ctx) {
             }
 
             await fn(action.value || action.args, ctx);
+            
+            // Agregar silencios poéticos entre acciones
+            if (Math.random() > 0.7) {
+                await actions.emit_silence({ ms: 500 }, ctx);
+            }
         }
     }
 
@@ -63,13 +68,13 @@ async function runRitual(ritual, ctx) {
     console.log("🧠 Estado final:", ctx.state);
 }
 
-// 🔑 ESTO ES LO QUE FALTABA
+// 🔑 EJECUTAR RITUAL
 await runRitual(ritual, ctx);
 
 // ---- exportación ----
 console.log("🎬 CapCut exportado en:");
+console.log("🔍 DEBUG - Timeline antes de exportar:", JSON.stringify(ctx.timeline, null, 2));
 const capcutPath = exportToCapCut(ritual, ctx);
 console.log(capcutPath);
 
-console.log("✅ Runner finalizó correctamente");
-
+console.log("✅ Runner nuevo finalizó correctamente");

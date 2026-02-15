@@ -1,19 +1,38 @@
 // parser/arc_parser_mock.js
 
-/**
- * Mock parser for ARC DSL.
- * This version is used for testing components that expect
- * a parser interface but do not require full parsing logic.
- */
+import fs from "fs";
 
-function mockParseARC(text) {
+export function parseARC(filePath) {
+    const text = fs.readFileSync(filePath, "utf-8");
+
+    // MASTER
+    const includes = [...text.matchAll(/incluye:\s*"([^"]+)"/g)]
+        .map(m => m[1]);
+
+    if (includes.length) {
+        return { type: "master", secuencia: includes };
+    }
+
+    // TIMELINE
+    const timeline = [];
+    const timelineMatches = [...text.matchAll(/s(\d+)\s*\{\s*text:\s*"([^"]+)"\s*\}/g)];
+
+    for (const m of timelineMatches) {
+        timeline.push({
+            at: Number(m[1]),
+            text: m[2]
+        });
+    }
+
     return {
-        type: "mock_ast",
-        raw: text,
-        meta: {
-            note: "This is a mock parser output. Real parsing is handled by arc_kernel_parser.js."
-        }
+        name: filePath.split("/").pop().replace(".arc", ""),
+        timeline,
+        sections: [
+            {
+                type: "step",
+                name: "inicio"
+            }
+        ]
     };
 }
 
-module.exports = { mockParseARC };

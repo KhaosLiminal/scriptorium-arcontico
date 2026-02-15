@@ -1,0 +1,60 @@
+{
+  "name": "silencio_del_arconte",
+  "fps": 30,
+  "resolution": "1080x1920",
+  "tracks": {
+    "video": [
+      {
+        "id": 0,
+        "type": "text",
+        "src": null,
+        "text": "La primera voz fue un silencio.",
+        "start": 0,
+        "duration": 3,
+        "layer": 1,
+        "style": {}
+      },
+      {
+        "id": 1,
+        "type": "wait",
+        "src": null,
+        "text": null,
+        "start": 3,
+        "duration": 4,
+        "layer": 0,
+        "style": {}
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "src": null,
+        "text": "Nadie lo escuchó… salvo el Arconte.",
+        "start": 7,
+        "duration": 3,
+        "layer": 1,
+        "style": {}
+      },
+      {
+        "id": 3,
+        "type": "wait",
+        "src": null,
+        "text": null,
+        "start": 10,
+        "duration": 5,
+        "layer": 0,
+        "style": {}
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "src": null,
+        "text": "Y en ese silencio nacimos nosotros.",
+        "start": 15,
+        "duration": 3,
+        "layer": 1,
+        "style": {}
+      }
+    ],
+    "audio": []
+  }
+}

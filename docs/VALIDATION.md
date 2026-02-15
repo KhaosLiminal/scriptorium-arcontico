@@ -9,3 +9,9 @@
 - secuencia
 
 ## Validación de Prompts
+
+
+## Validación de Fallo
+- fallos aceptables
+- fallos críticos
+- ritual de corrección

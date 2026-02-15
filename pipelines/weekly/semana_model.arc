@@ -47,4 +47,9 @@ ritual semana_reflejos_hibridos {
         file: "pipelines/kerigma/silencio_arconte.arc"
         objetivo: "mensaje central de la semana"
     }
+    control {
+  regla: "ninguna pieza se publica sin pasar por el ritual de la semana"
+  fallback: "si falla un día, se reabsorbe en el domingo"
 }
+}
+

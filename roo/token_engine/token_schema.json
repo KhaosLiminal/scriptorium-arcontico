@@ -1,0 +1,9 @@
+{
+  "TKN-I": { "required": true, "type": "string" },
+  "TKN-F": { "required": true, "type": "string" },
+  "TKN-T": { "required": false, "type": "string" },
+  "TKN-C": { "required": true, "enum": ["funcional", "hermeneutica", "ritual"] },
+  "TKN-M": { "required": false, "type": "string" },
+  "TKN-R": { "required": false, "type": "string" },
+  "TKN-S": { "required": false, "type": "string" }
+}
