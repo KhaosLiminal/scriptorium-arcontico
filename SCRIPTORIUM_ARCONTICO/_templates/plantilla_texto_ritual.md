@@ -5,9 +5,12 @@ capa: "funcional|interpretativa|ritual"
 intencion: ""
 tono: ""
 estado: "borrador"
+artefacto_ritual: "nombre.ark"
 ---
 
 # Prompt Ritual
+
+## Contrato TKN
 
 TKN-I:
 TKN-F:
@@ -16,6 +19,14 @@ TKN-C:
 TKN-M:
 TKN-R:
 TKN-S:
+
+## Secciones rituales (opcional si aplica)
+
+[UMBRAL]
+
+[INVOCACION]
+
+[RESONANCIA]
 
 ## Entrega
 

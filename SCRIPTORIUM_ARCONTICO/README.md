@@ -11,6 +11,12 @@ Este directorio es la fuente oficial para contenido editorial.
 - `05_PROMPT_RITUAL/`: canon de prompts y operadores rituales.
 - `_templates/`: plantillas de produccion.
 
+## Norma de formato ritual
+
+- Canon de artefacto: `.ark`
+- Alias legado: `.arc`
+- Referencia oficial: `05_PROMPT_RITUAL/genealogia_ark_tkn_v1.md`
+
 ## Regla de canon
 
 - Todo contenido nuevo nace aqui.
