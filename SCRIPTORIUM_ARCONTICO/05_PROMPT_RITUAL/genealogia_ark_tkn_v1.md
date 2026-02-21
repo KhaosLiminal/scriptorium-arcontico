@@ -1,10 +1,10 @@
-# Genealogia .ark/.tkn v1
+# Genealogia .arc/.tkn v1
 
 <!-- markdownlint-disable MD013 -->
 
 ## Objetivo
 
-Fijar trazabilidad de I a XVIII para el origen y evolucion de `.ark` y `TKN-*`.
+Fijar trazabilidad de I a XVIII para el origen y evolucion de `.arc` y `TKN-*`.
 Convertir esa genealogia en norma operativa para el repositorio activo.
 
 ## Hallazgos base
@@ -12,7 +12,7 @@ Convertir esa genealogia en norma operativa para el repositorio activo.
 - `TKN-*` aparece formalizado y estable en `VII`, `IX` y `X`.
 - El formato de archivo operativo aparece como `.arc` en `XVIII`.
 - `XIX` valida uso de `.arc` en ejecucion ritual, como evidencia complementaria.
-- Canon actual por decision de proyecto: `.ark`.
+- Canon actual por decision de proyecto: `.arc`.
 
 ## Inventario trazable por dialogo (I-XVIII)
 
@@ -38,8 +38,8 @@ Referencias clave:
 
 ## ARK Spec v1
 
-- `file_extension`: `.ark`
-- `legacy_aliases`: `.arc`
+- `file_extension`: `.arc`
+- `legacy_aliases`: `.ark`
 - Estructura valida minima: una de estas dos.
 
 1. Secciones rituales.
@@ -60,8 +60,8 @@ Referencias clave:
 
 Regla de canon:
 
-- Todo artefacto nuevo usa `.ark`.
-- `.arc` queda como legado historico con nota de equivalencia a `.ark`.
+- Todo artefacto nuevo usa `.arc`.
+- `.ark` queda como legado historico con nota de equivalencia a `.arc`.
 
 ## TKN Contract v1
 
@@ -92,8 +92,8 @@ Reglas de completitud minima:
 
 ## Norma editorial de transicion
 
-- Nuevos textos y ejemplos tecnicos: extension `.ark`.
-- Referencias historicas a `.arc`: conservar y anotar `legacy_alias -> .ark`.
+- Nuevos textos y ejemplos tecnicos: extension `.arc`.
+- Referencias historicas a `.ark`: conservar y anotar `legacy_alias -> .arc`.
 - Si aparece `TKN-C: categoria`, convertir a `TKN-C: capa` en contenido nuevo.
 
 ## Escenarios de validacion
@@ -105,12 +105,12 @@ Reglas de completitud minima:
 
 1. Coherencia canonica.
 
-- Documento nuevo con `.arc` sin etiqueta de legado es inconsistente.
+- Documento nuevo con `.ark` sin etiqueta de legado es inconsistente.
 - Prompt ritual sin algun `TKN-*` obligatorio es incompleto.
 
 1. Compatibilidad.
 
-- Documento legado `.arc` sigue valido con equivalencia explicita a `.ark`.
+- Documento legado `.ark` sigue valido con equivalencia explicita a `.arc`.
 
 1. Integracion actual.
 

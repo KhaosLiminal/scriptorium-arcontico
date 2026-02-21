@@ -13,8 +13,8 @@ Este directorio es la fuente oficial para contenido editorial.
 
 ## Norma de formato ritual
 
-- Canon de artefacto: `.ark`
-- Alias legado: `.arc`
+- Canon de artefacto ejecutable: `.arc`
+- Alias legado historico: `.ark`
 - Referencia oficial: `05_PROMPT_RITUAL/genealogia_ark_tkn_v1.md`
 
 ## Regla de canon

@@ -5,7 +5,7 @@ capa: "funcional|interpretativa|ritual"
 intencion: ""
 tono: ""
 estado: "borrador"
-artefacto_ritual: "nombre.ark"
+artefacto_ritual: "nombre.arc"
 ---
 
 # Prompt Ritual

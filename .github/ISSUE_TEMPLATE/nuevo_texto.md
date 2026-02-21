@@ -16,5 +16,5 @@ assignees: []
 
 - [ ] Metadatos completos
 - [ ] Bloque TKN completo (si aplica)
-- [ ] Si hay artefacto ritual, usar `.ark` (o justificar `.arc` legado)
+- [ ] Si hay artefacto ritual, usar `.arc` (o justificar `.ark` legado)
 - [ ] Enlaces internos validos

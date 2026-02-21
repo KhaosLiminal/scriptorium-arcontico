@@ -6,8 +6,8 @@
 - Nombre de archivo: `snake_case.md`.
 - Un tema por archivo.
 - Estado editorial en frontmatter: `borrador|revision|canon`.
-- Artefactos rituales nuevos: extension `.ark`.
-- Referencias a `.arc` solo como legado, con equivalencia explicita a `.ark`.
+- Artefactos rituales nuevos: extension `.arc`.
+- Referencias a `.ark` solo como legado historico.
 - Contrato token obligatorio: `TKN-I/F/T/C/M/R/S`.
 
 ## Flujo de PR

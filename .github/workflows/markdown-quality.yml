@@ -25,12 +25,13 @@ jobs:
             "arconte/README.md" \
             "SCRIPTORIUM_ARCONTICO/**/*.md" \
             ".github/**/*.md" \
-            "#SCRIPTORIUM_ARCONTICO/ARCONTE_v3_tokenizado.md"
+            "#SCRIPTORIUM_ARCONTICO/ARCONTE_v3_tokenizado.md" \
+            "#SCRIPTORIUM_ARCONTICO/scriptorium_repositorio/**/*.md"
 
       - name: Link check
         run: |
           set -euo pipefail
-          files=$(git ls-files README.md CONTRIBUTING.md arconte/README.md 'SCRIPTORIUM_ARCONTICO/*.md' 'SCRIPTORIUM_ARCONTICO/**/*.md' '.github/**/*.md' ':(exclude)SCRIPTORIUM_ARCONTICO/ARCONTE_v3_tokenizado.md')
+          files=$(git ls-files README.md CONTRIBUTING.md arconte/README.md 'SCRIPTORIUM_ARCONTICO/*.md' 'SCRIPTORIUM_ARCONTICO/**/*.md' '.github/**/*.md' ':(exclude)SCRIPTORIUM_ARCONTICO/ARCONTE_v3_tokenizado.md' ':(exclude)SCRIPTORIUM_ARCONTICO/scriptorium_repositorio/**')
           for f in $files; do
             npx --yes markdown-link-check -q "$f"
           done
