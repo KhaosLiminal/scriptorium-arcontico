@@ -17,6 +17,9 @@ Estructurar intención, rol, marco, riesgo y resonancia de cualquier intervenci�
 Unidad mínima:
 Los 7 sellos (I/F/T/C/M/R/S).
 
+Normalización operativa:
+Para casos de divulgación pública, `TKN-C` se congela como `public`.
+
 Importante:
 TKN no es archivo.
 TKN no es extensión.

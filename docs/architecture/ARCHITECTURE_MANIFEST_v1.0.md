@@ -39,12 +39,18 @@ Componentes (7 sellos obligatorios):
 - R - Riesgo
 - S - Silencio
 
+Normalizacion operativa de `TKN-C` (congelado v1.0):
+
+- Para casos de divulgacion publica, el valor canonico es `public`.
+- Este valor debe conservarse sin sinonimos en POT y DSL.
+
 Reglas:
 
 1. Todo proceso inicia con TKN explicito.
 2. No existe ejecucion sin contrato ontologico.
 3. TKN no es archivo ni extension.
 4. TKN no puede redefinirse sin cambio MAJOR.
+5. En salida publica, `TKN-C` se fija como `public`.
 
 ### II. Estrato Editorial - K_SCRIPTORIUM
 

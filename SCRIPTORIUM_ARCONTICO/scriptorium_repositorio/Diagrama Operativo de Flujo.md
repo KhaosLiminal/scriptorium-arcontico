@@ -21,6 +21,9 @@ M  = Modo
 R  = Riesgo
 S  = Silencio
 
+Normalización:
+Para divulgación pública, `TKN-C = public`.
+
 
 Salida:
 👉 Contrato semántico validado.
